@@ -1,0 +1,59 @@
+---
+title: "A week in MDS"
+author: "Rachel K. Riggs"
+date: "September 22, 2018"
+output:
+  ioslides_presentation:
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Monday through Thursday 
+
+- wake up really early
+- go to lectures
+- go to labs
+- stay on campus to get more work done
+- calculate amount of time needed to sleep
+
+```{r sleep time, echo = TRUE}
+night_hours <- 24 - 22
+morning_hours <- 0 + 5.5
+amount_of_sleep <-  night_hours + morning_hours
+print(paste0("Try get to at least ", amount_of_sleep, " hours of sleep."))
+```
+
+## Friday
+
+- get up early, but not as early as Mon-Thurs
+- work on labs all day
+- eat dinner
+- sleep a bit more than Mon-Thurs
+
+## Saturday
+
+- get up early
+- work on labs all day
+- **SUBMIT LABS BY 6PM!!!**
+- make pizza
+- eat pizza and have a beer
+
+## Sunday {.smaller}
+
+- get up early
+- work out
+- calculate ratio of free time vs time needed to study/read/etc.
+
+```{r time for study vs play, echo = TRUE, tidy=TRUE}
+hours_in_day_awake <- 24 - 8
+hours_study = 4
+hours_free = 5
+print(paste("This Sunday I get", (hours_free/hours_in_day_awake)*100, "% free time vs.", (hours_study/hours_in_day_awake)*100,"% work time. The rest is for sleep, cleaning, and errands."))
+
+```
+
+
+
